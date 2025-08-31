@@ -3,85 +3,61 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mustafa Mert Avcı — Portfolio</title>
-  <meta name="description" content="AI/ML & Data Science projects, CV, and contact for Mustafa Mert Avcı.">
-  <link rel="canonical" href="https://MMertAvc.github.io/">
-  <meta property="og:title" content="Mustafa Mert Avcı — Portfolio">
-  <meta property="og:description" content="AI/ML & Data Science projects, CV, and contact.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://MMertAvc.github.io/">
-  <meta name="theme-color" content="#0e1320">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Mustafa Mert Avcı — Personal Website</title>
+  <meta name="description" content="Computer Engineering student exploring AI, ML, and data science through hands-on projects.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header" role="banner">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Go to top">Mert Avcı</a>
-      <nav class="nav" role="navigation" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#projects">Projects</a>
-        <a href="#certs">Certificates</a>
-        <a href="#contact">Contact</a>
-        <a class="btn btn-primary" href="cv/Mustafa_Mert_Avci_CV.pdf" target="_blank" rel="noopener" aria-label="Open CV PDF">Download CV</a>
-      </nav>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="menu">☰</button>
+  <header class="wrap hero">
+    <img src="assets/me.jpg" alt="Portrait of Mustafa Mert Avcı" class="avatar">
+    <div>
+      <h1>Mustafa Mert Avcı</h1>
+      <p class="tagline">Exploring AI, machine learning, and data science to build useful, elegant software.</p>
+      <p class="links">
+        <a class="btn" href="cv/Mustafa_Mert_Avci_CV.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
+        <a class="btn ghost" href="https://github.com/MMertAvc" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn ghost" href="mailto:mustmertavci@gmail.com">Email</a>
+      </p>
     </div>
   </header>
 
-  <main id="top" class="container">
-    <section class="hero" aria-labelledby="name">
-      <div class="avatar" aria-hidden="true">
-        <img src="assets/img/me.jpg" alt="Portrait of Mustafa Mert Avcı" onerror="this.classList.add('fallback')">
-      </div>
-      <div class="hero-text">
-        <h1 id="name">Mustafa Mert Avcı</h1>
-        <p class="tag">Computer Engineering undergrad focused on AI, machine learning, and data science.</p>
-        <div class="cta">
-          <a class="btn btn-primary" href="cv/Mustafa_Mert_Avci_CV.pdf" target="_blank" rel="noopener">CV (PDF)</a>
-          <a class="btn" href="https://github.com/MMertAvc" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn" href="https://www.linkedin.com/in/mustafa-mert-avci-a8a24732b/" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn" href="mailto:mustmertavci@gmail.com">Email</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section">
+  <main class="wrap">
+    <section>
       <h2>About</h2>
-      <p>I am a third-year Computer Engineering student at the Eastern Mediterranean University (English program). I build projects across AI/ML and data science, from notebooks and analytics pipelines to interactive visualizations. I completed internships at <strong>ROKETSAN</strong> (Launch Operations Unit) and <strong>ASELSAN Konya</strong>. I have developed 50+ projects and enjoy transforming ideas into useful, reliable code.</p>
+      <p>I am a third-year Computer Engineering student at the Eastern Mediterranean University. I focus on artificial intelligence,
+         machine learning, and data science, and I enjoy turning ideas into working code and clear visualizations. I have completed internships
+         at ROKETSAN (Launch Operations Unit) and ASELSAN Konya, and I have built 50+ projects ranging from analytics pipelines to
+         scientific notebooks.</p>
     </section>
 
-    <section id="research" class="section">
+    <section>
       <h2>Research & Interests</h2>
-      <ul class="bullets">
-        <li>Machine learning for signal processing and time-series modeling.</li>
-        <li>Scientific Python stack (NumPy/SciPy/Astropy/Matplotlib) and reproducible notebooks.</li>
-        <li>Data engineering basics: pipelines, dashboards, and evaluation.</li>
+      <p>My interests include AI/ML, model evaluation, and scientific computing. I am currently learning better practices for
+         data processing and visualization, and I plan to apply these skills across engineering and astronomy-inspired problems.</p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul class="cards">
+        <li>
+          <h3>Exoplanet Atmospheres (2025)</h3>
+          <p>Python notebook that computes transit depth, scale height, and equilibrium temperature and plots a synthetic light curve.</p>
+          <p><a href="#" class="card-link">Notebook (local)</a></p>
+        </li>
+        <li>
+          <h3>Data Engineering Mini-DWH (2025)</h3>
+          <p>Dockerized Postgres + dbt + Airflow analytics pipeline with scheduled DAGs and views for downstream BI.</p>
+          <p><a href="https://github.com/MMertAvc" target="_blank" rel="noopener" class="card-link">View on GitHub</a></p>
+        </li>
+        <li>
+          <h3>E-commerce Automation (2024)</h3>
+          <p>Managed 10+ online stores and ran Meta Ads campaigns; created basic analytics dashboards to track performance.</p>
+          <p><a href="https://github.com/MMertAvc" target="_blank" rel="noopener" class="card-link">Read more</a></p>
+        </li>
       </ul>
     </section>
 
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>Exoplanet Atmospheres (2025)</h3>
-          <p>Computes transit depth, equilibrium temperature, and produces synthetic light curves & RV models.</p>
-          <p><a class="link" href="https://github.com/MMertAvc" target="_blank" rel="noopener">View materials on GitHub</a></p>
-        </article>
-        <article class="card">
-          <h3>Mini DWH with Airflow (2025)</h3>
-          <p>Dockerized Postgres + dbt + Airflow with scheduled DAGs and tests for downstream BI.</p>
-          <p><a class="link" href="https://github.com/MMertAvc" target="_blank" rel="noopener">Repository</a></p>
-        </article>
-        <article class="card">
-          <h3>E‑commerce Analytics (2024)</h3>
-          <p>Managed 10+ online stores; automated reporting; Meta Ads performance tracking with custom dashboards.</p>
-          <p><a class="link" href="https://github.com/MMertAvc" target="_blank" rel="noopener">Read more</a></p>
-        </article>
-      </div>
-    </section>
-
-    <section id="certs" class="section">
+    <section>
       <h2>Certificates</h2>
       <ul class="bullets">
         <li>Data Science Bootcamp (2025)</li>
@@ -90,23 +66,21 @@
       </ul>
     </section>
 
-    <section id="contact" class="section">
+    <section>
+      <h2>Publications & Talks</h2>
+      <p>—</p>
+    </section>
+
+    <section>
       <h2>Contact</h2>
-      <div class="contact-grid">
-        <a class="pill" href="mailto:mustmertavci@gmail.com" aria-label="Email Mustafa">📧 Email</a>
-        <a class="pill" href="https://github.com/MMertAvc" target="_blank" rel="noopener">🐙 GitHub</a>
-        <a class="pill" href="https://www.linkedin.com/in/mustafa-mert-avci-a8a24732b/" target="_blank" rel="noopener">🔗 LinkedIn</a>
-        <a class="pill" href="cv/Mustafa_Mert_Avci_CV.pdf" target="_blank" rel="noopener">📄 CV (PDF)</a>
-      </div>
+      <p>Email: <a href="mailto:mustmertavci@gmail.com">mustmertavci@gmail.com</a> · GitHub: <a href="https://github.com/MMertAvc" target="_blank" rel="noopener">MMertAvc</a> · LinkedIn: <a href="https://www.linkedin.com/in/mustafa-mert-avcı-a8a24732b" target="_blank" rel="noopener">Profile</a></p>
     </section>
   </main>
 
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <p>© 2025 Mustafa Mert Avcı · Built with semantic HTML + vanilla CSS.</p>
-    </div>
+  <footer class="wrap footer">
+    <p>© <span id="y"></span> Mustafa Mert Avcı</p>
   </footer>
 
-  <script src="assets/js/site.js"></script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
